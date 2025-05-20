@@ -1,0 +1,39 @@
+# ───── Archivos binarios ─────
+*.exe
+*.apk
+*.dll
+*.so
+*.a
+*.o
+*.dcu
+
+# ───── Archivos temporales del IDE ─────
+*.local
+*.identcache
+*.tvsconfig
+*.dsk
+*.~*
+*.stat
+*.dproj.local
+
+# ───── Archivos de respaldo ─────
+*.bak
+
+# ───── Carpetas generadas automáticamente ─────
+__history/
+__recovery/
+
+# ───── Carpetas de compilación ─────
+Android/Debug/
+Android/Release/
+iOS/Debug/
+iOS/Release/
+Win32/Debug/
+Win32/Release/
+Win64/Debug/
+Win64/Release/
+
+# ───── Otros ─────
+*.tmp
+*.log
+*.cache

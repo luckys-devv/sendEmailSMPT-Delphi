@@ -1,0 +1,208 @@
+object FresidenteMails: TFresidenteMails
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  Caption = 'LMail'
+  ClientHeight = 624
+  ClientWidth = 363
+  Fill.Color = xFFECECEC
+  Fill.Kind = Solid
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Top
+    Size.Width = 363.000000000000000000
+    Size.Height = 105.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Layout5: TLayout
+      Align = Left
+      Size.Width = 121.000000000000000000
+      Size.Height = 105.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Circle3: TCircle
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF0081A7
+            Offset = 0.003105590119957924
+          end
+          item
+            Color = xFF00AFB9
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StartPosition.Y = 1.000000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Fill.Gradient.StopPosition.Y = 0.000000000000000000
+        Position.X = -140.000000000000000000
+        Position.Y = -82.000000000000000000
+        Size.Width = 261.000000000000000000
+        Size.Height = 186.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF3B83BD
+        Stroke.Thickness = 0.000000000000000000
+      end
+    end
+  end
+  object Layout2: TLayout
+    Align = Bottom
+    Position.Y = 513.000000000000000000
+    Size.Width = 363.000000000000000000
+    Size.Height = 111.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Layout4: TLayout
+      Align = Right
+      Position.X = 162.000000000000000000
+      Size.Width = 201.000000000000000000
+      Size.Height = 111.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object Circle2: TCircle
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF0081A7
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFF00AFB9
+            Offset = 0.993788838386535600
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StartPosition.Y = 1.000000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Fill.Gradient.StopPosition.Y = 0.000000000000000000
+        Position.X = 18.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 306.000000000000000000
+        Size.Height = 209.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFFB4B6B8
+        Stroke.Thickness = 0.000000000000000000
+      end
+    end
+  end
+  object Layout3: TLayout
+    Align = Center
+    Margins.Top = 90.000000000000000000
+    Size.Width = 263.000000000000000000
+    Size.Height = 290.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Label1: TLabel
+      Align = Top
+      StyledSettings = [Family]
+      Margins.Top = 10.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 263.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = xFF0B2D5B
+      TextSettings.HorzAlign = Center
+      Text = 'LMail'
+      TabOrder = 3
+    end
+    object edtTo: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 0
+      TextSettings.FontColor = xFF333333
+      Position.Y = 63.000000000000000000
+      Margins.Top = 30.000000000000000000
+      Size.Width = 263.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Para:'
+      StyledSettings = [Family, Size, Style]
+      OnKeyDown = edtToKeyDown
+    end
+    object edtSubject: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 1
+      TextSettings.FontColor = xFF333333
+      Position.Y = 105.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Size.Width = 263.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Asunto:'
+      StyledSettings = [Family, Size, Style]
+      OnKeyDown = edtSubjectKeyDown
+    end
+    object Rectangle1: TRectangle
+      Align = Bottom
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF0081A7
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFF00AFB9
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.499999970197677600
+      Fill.Gradient.StopPosition.Y = 0.000000000000000000
+      Position.Y = 240.000000000000000000
+      Size.Width = 263.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = Gradient
+      Stroke.Gradient.Points = <
+        item
+          Color = xFF0081A7
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFF00AFB9
+          Offset = 1.000000000000000000
+        end>
+      Stroke.Gradient.StartPosition.Y = 1.000000000000000000
+      Stroke.Gradient.StopPosition.X = 1.000000000000000000
+      Stroke.Gradient.StopPosition.Y = 0.000000017114270889
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 5.000000000000000000
+      YRadius = 5.000000000000000000
+      object btnAceptar: TSpeedButton
+        Align = Client
+        Cursor = crHandPoint
+        StyledSettings = [Family, Size]
+        Size.Width = 263.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Enviar'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.FontColor = xFFF2F2F2
+        TextSettings.Trimming = None
+        OnClick = btnAceptarClick
+      end
+    end
+    object edtMessage: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 2
+      TextSettings.FontColor = xFF333333
+      Position.Y = 147.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Size.Width = 263.000000000000000000
+      Size.Height = 62.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Mensaje'
+      StyledSettings = [Family, Size, Style]
+      OnKeyDown = edtMessageKeyDown
+    end
+  end
+end
